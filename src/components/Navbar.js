@@ -20,6 +20,9 @@ function Navbar() {
         <li>
             <Link to="/mapasteroids">Map of Asteroids</Link>
         </li>
+        <li>
+            <Link to="/nearearthobjects">Objects Near Earth</Link>
+        </li>
       </ul>
     </nav>
   );
