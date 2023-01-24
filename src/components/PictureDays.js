@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState , useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function NasaPhoto() {
     const [photoData, setPhotoData] = useState(null)
@@ -18,14 +19,18 @@ function NasaPhoto() {
     }, []);
 
     return (
-        <div>
-            <img src={photoData.url} alt={photoData.title} />
-            <div>
-                <h1>{photoData.title}</h1>
-                <p>{photoData.date}</p>
-                <p>{photoData.explanation}</p>
-            </div>
-        </div>
+            <Router>
+                <Route path="/pictureday">
+                    <div>
+                        <img src={photoData.url} alt={photoData.title} />
+                        <div>
+                            <h1>{photoData.title}</h1>
+                            <p>{photoData.date}</p>
+                            <p>{photoData.explanation}</p>
+                        </div>
+                    </div>
+                </Route>
+            </Router>
     );
 }
 
