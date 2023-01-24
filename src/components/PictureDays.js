@@ -11,7 +11,7 @@ function NasaPhoto() {
             const resp = await fetch(
                 `https://api.nasa.gov/planetary/apod?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG`
             );
-            const data = await resp.json
+            const data = resp.json
             setPhotoData(data);
             console.log(data);
         }
@@ -19,6 +19,7 @@ function NasaPhoto() {
 
     return (
         <div>
+            <img src={photoData.url} alt={photoData.title} />
             <div>
                 <h1>{photoData.title}</h1>
                 <p>{photoData.date}</p>
