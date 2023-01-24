@@ -9,19 +9,19 @@ function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/picturedays">Nasa Picture of the Day</Link>
+          <Link to="/picture-days">Nasa Picture of the Day</Link>
         </li>
         <li>
-          <Link to="/weathermars">Weather on Planet Mars</Link>
+          <Link to="/weather-mars">Weather on Planet Mars</Link>
         </li>
         <li>
-            <Link to="/marsphotos">Mars Rover Photos</Link>
+            <Link to="/mars-photos">Mars Rover Photos</Link>
         </li>
         <li>
-            <Link to="/mapasteroids">Map of Asteroids</Link>
+            <Link to="/map-asteroids">Map of Asteroids</Link>
         </li>
         <li>
-            <Link to="/nearearthobjects">Objects Near Earth</Link>
+            <Link to="/near-earth-objects">Objects Near Earth</Link>
         </li>
       </ul>
     </nav>
