@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 const  WeatherMars= () => {
@@ -13,7 +13,8 @@ const  WeatherMars= () => {
   }, []);
 
   return (
-    <Router>
+    <BrowserRouter>
+    <Routes>
         <Route path="/weathermars" component={WeatherMars} >
     <div>
       <h2>Weather on Planet Mars</h2>
@@ -21,7 +22,8 @@ const  WeatherMars= () => {
       <p>Speed of Wind: {weatherData.HWS && weatherData.HWS.av}</p>
     </div>
     </Route>
-    </Router>
+    </Routes>
+    </BrowserRouter>
   );
 
 }

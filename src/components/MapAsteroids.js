@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function MapAsteroids() {
     const [asteroids, setAsteroids] = useState([]);
     useEffect(() => {
-      axios
-        .get("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG")
+    
+        fetch("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG")
         .then(res => setAsteroids(res.data.near_earth_objects))
         .catch(err => console.log(err));
     }, []);
   
   return (
-    <Router>
+    <BrowserRouter>
+    <Routes>
     <Route>
       <div>
         <h1>Map of Asteroids</h1>
@@ -23,7 +24,8 @@ function MapAsteroids() {
         ))}
       </div>
       </Route>
-      </Router>
+      </Routes>
+      </BrowserRouter>
     );
   }
 

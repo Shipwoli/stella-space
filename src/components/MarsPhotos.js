@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function MarsRoverPhotos() {
   const [photos, setPhotos] = useState([]);
@@ -11,7 +11,8 @@ function MarsRoverPhotos() {
   }, []);
 
   return (
-    <Router>
+    <BrowserRouter>
+    <Routes>
       <Route path="/">
         <div>
           {photos.map(photo => (
@@ -19,7 +20,8 @@ function MarsRoverPhotos() {
           ))}
         </div>
       </Route>
-    </Router>
+    </Routes>
+    </BrowserRouter>
   );
 }
 
