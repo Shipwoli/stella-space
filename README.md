@@ -90,10 +90,13 @@ To run the application, you can use the following steps
 
 ### Authors  
 
-Saviour Khalwale
-Muna Hassan
-Martin Mugo
-Changawa Issa
+-Saviour Khalwale
+
+-Muna Hassan
+
+-Martin Mugo
+
+-Changawa Issa
 
 
 Licence : permissive MIT licence
