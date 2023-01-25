@@ -12,9 +12,9 @@ function Navbar() {
           <Link className='text-dark nav-link' to="/">Home</Link>
           </button>
         </li>
-        <li>
+        <li className='nav-item me-4'>
           <button>
-          <Link to="/picture-days">Nasa Picture of the Day</Link>
+          <Link className='text-dark nav-link' to="/picture-days">Nasa Picture of the Day</Link>
           </button>
         </li>
         <li className="nav-item me-4">

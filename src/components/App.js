@@ -7,6 +7,7 @@ import NasaPicture from "./PictureDays";
 import "./App.css";
 import Navbar from "./Navbar";
 import IntroParagraph from "./IntroParagraph";
+import Login from "./Login";
 
 
 
@@ -14,6 +15,7 @@ export default function App() {
     return (
       <BrowserRouter>
       <Navbar />
+      <Login />
       <IntroParagraph/>
       <NasaPicture />
      <Routes>
