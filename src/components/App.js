@@ -16,6 +16,7 @@ export default function App() {
       <Navbar />
       <IntroParagraph/>
       <NasaPicture/>
+      
      <Routes>
     
         
@@ -28,6 +29,7 @@ export default function App() {
 
        
      </Routes>
+     
      </BrowserRouter>
      
      
