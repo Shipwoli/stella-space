@@ -21,7 +21,7 @@ export default function App() {
         
         {/* <Route exact path="/" component={Home} /> */}
         <Route path="/map-asteroids" component={MapAsteroids} />
-        <Route path="/mars-photos" component={MarsPhotos} />
+        <Route path="/mars-photos" component={MarsRoverPhotos} />
         <Route path="/weather-mars" component={WeatherMars} />
         <Route path="/nasa-picture" component={NasaPicture} />
         {/* <Route path="/near-earth-objects" component={NearEarthObjects} /> */}

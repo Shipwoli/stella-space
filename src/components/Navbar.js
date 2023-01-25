@@ -13,7 +13,9 @@ function Navbar() {
           </button>
         </li>
         <li>
+          <button>
           <Link to="/picture-days">Nasa Picture of the Day</Link>
+          </button>
         </li>
         <li className="nav-item me-4">
           <button>
