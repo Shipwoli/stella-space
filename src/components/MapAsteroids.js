@@ -1,26 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
+const NASA_API_KEY = 'h14aKNTMgeEqclkSY2yFEFYUKHSji7fjLaTN60F3';
 
-function MapAsteroids() {
-    const [asteroids, setAsteroids] = useState([]);
-    useEffect(() => {
-    
-        fetch("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG")
-        .then(res => setAsteroids(res.data.near_earth_objects))
-        .catch(err => console.log(err));
-    }, []);
-  
+const MapAsteroids = () => {
+  const [asteroids, setAsteroids] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=${NASA_API_KEY}`);
+      const data = await response.json();
+      setAsteroids(data.near_earth_objects);
+    };
+    fetchData();
+  }, []);
+
   return (
-      <div>
-        <h1>Map of Asteroids</h1>
-        {asteroids.map(asteroid => (
-          <div key={asteroid.id}>
-            <p>Name: {asteroid.name}</p>
-            <p>Diameter: {asteroid.estimated_diameter.kilometers.estimated_diameter_min} - {asteroid.estimated_diameter.kilometers.estimated_diameter_max} km</p>
-          </div>
+    <div>
+      <h1>Map of Asteroids</h1>
+      <ul>
+        {asteroids.map((asteroid) => (
+          <li key={asteroid.id}>{asteroid.name}</li>
         ))}
-      </div>
-    );
-  }
+      </ul>
+    </div>
+  );
+};
 
-  export default MapAsteroids;
+export default MapAsteroids;
