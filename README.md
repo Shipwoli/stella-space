@@ -12,10 +12,15 @@ NB: Use the following API to achieve the deliverable below: https://api.nasa.gov
 The following requirements MUST be delivered in order to consider your submission as complete:
 
 -Home Page - When a user first opens the application, they should be greeted with a page that has information about what the application aims to do.
+
 -Should be able to view the Nasa picture of the day
+
 -Should be able to see all the objects near the earth (Visualize this in the UI).
+
 -Should be able to visualize the weather on planet mars.
+
 -Should be able to show all Mars Rover Photos.
+
 -Should be able to display a Map of Asteroids within the space.
 
 ### Extra Deliverables
@@ -23,6 +28,7 @@ The following requirements MUST be delivered in order to consider your submissio
 The following deliverables will earn you extra points:
 
 -Add an authentication page (Login / Registration)
+
 -Provide a logout functionality
 
 
