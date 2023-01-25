@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MapAsteroids from "./MapAsteroids";
-import MarsPhotos from "./MarsPhotos";
+import MarsRoverPhotos from "./MarsPhotos";
 import WeatherMars from "./WeatherMars";
 import NasaPicture from "./PictureDays";
-import NearEarthObjects from "./NearEarthObjects";
+// import NearEarthObjects from "./NearEarthObjects";
 import "./App.css";
 import Navbar from "./Navbar";
 import IntroParagraph from "./IntroParagraph";
@@ -16,20 +16,18 @@ export default function App() {
       <Navbar />
       <IntroParagraph/>
       <NasaPicture/>
-      
      <Routes>
     
         
-        {/* <Route exact path="/" element={Home} /> */}
-        <Route path="/map-asteroids" element={MapAsteroid} />
-        <Route path="/mars-photos" element={MarsPhotos} />
-        <Route path="/weather-mars" element={WeatherMars} />
-        <Route path="/nasa-picture" element={NasaPicture} />
-        <Route path="/near-earth-objects" element={NearEarthObjects} />
+        {/* <Route exact path="/" component={Home} /> */}
+        <Route path="/map-asteroids" component={MapAsteroids} />
+        <Route path="/mars-photos" component={MarsPhotos} />
+        <Route path="/weather-mars" component={WeatherMars} />
+        <Route path="/nasa-picture" component={NasaPicture} />
+        {/* <Route path="/near-earth-objects" component={NearEarthObjects} /> */}
 
        
      </Routes>
-     
      </BrowserRouter>
      
      

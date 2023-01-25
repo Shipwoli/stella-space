@@ -26,5 +26,3 @@ const NasaPicture = () => {
 };
 
 export default NasaPicture;
-
-

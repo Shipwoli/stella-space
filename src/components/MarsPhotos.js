@@ -17,12 +17,11 @@ const MarsRoverPhotos = () => {
 
   return (
     <div>
-      {photos.map(photo => (
-        <img src={photo.img_src} alt={photo.camera.name} key={photo.id} />
-      ))}
-    </div>
+    {photos.map(photo => (
+      <img src={photo.img_src} alt={photo.camera.name} key={photo.id} />
+    ))}
+  </div>
   );
-};
-  
+}
 
 export default MarsRoverPhotos;
