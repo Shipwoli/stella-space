@@ -3,27 +3,29 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
+    <nav className='navbar bg-dark'>
+      <div className='container-fluid'>
+      <ul className='d-flex'>
+        <li className="nav-item me-4">
+          <Link className='text-light nav-link' to="/">Home</Link>
         </li>
-        <li>
-          <Link to="/picture-days">Nasa Picture of the Day</Link>
+        <li className="nav-item me-4">
+          <Link className='text-light nav-link' to="/picture-days">Nasa Picture of the Day</Link>
         </li>
-        <li>
-          <Link to="/weather-mars">Weather on Planet Mars</Link>
+        <li className="nav-item me-4">
+          <Link className='text-light nav-link' to="/weather-mars">Weather on Planet Mars</Link>
         </li>
-        <li>
-            <Link to="/mars-photos">Mars Rover Photos</Link>
+        <li className="nav-item me-4">
+            <Link className='text-light nav-link' to="/mars-photos">Mars Rover Photos</Link>
         </li>
-        <li>
-            <Link to="/map-asteroids">Map of Asteroids</Link>
+        <li className="nav-item me-4">
+            <Link className='text-light nav-link' to="/map-asteroids">Map of Asteroids</Link>
         </li>
-        <li>
-            <Link to="/near-earth-objects">Objects Near Earth</Link>
+        <li className="nav-item me-4">
+            <Link className='text-light nav-link' to="/near-earth-objects">Objects Near Earth</Link>
         </li>
       </ul>
+      </div>
     </nav>
   );
 }

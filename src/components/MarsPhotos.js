@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
+
 
 const MarsRoverPhotos = () => {
   const [photos, setPhotos] = useState([]);
@@ -13,19 +16,12 @@ const MarsRoverPhotos = () => {
   }, []);
 
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/">
-        <div>
-          {photos.map(photo => (
-            <img key={photo.id} src={photo.img_src} alt={photo.earth_date} />
-          ))}
-        </div>
-      </Route>
-    </Routes>
-    </BrowserRouter>
+    <div>
+    {photos.map(photo => (
+      <img src={photo.img_src} alt={photo.camera.name} key={photo.id} />
+    ))}
+  </div>
   );
-};
-  
+}
 
 export default MarsRoverPhotos;

@@ -16,22 +16,13 @@ const NasaPicture = () => {
     return <p>Loading...</p>;
   }
 
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/pictureday">
-                    <div>
-                        <img src={photoData.url} alt={photoData.title} />
-                        <div>
-                            <h1>{photoData.title}</h1>
-                            <p>{photoData.date}</p>
-                            <p>{photoData.explanation}</p>
-                        </div>
-                    </div>
-                </Route>
-            </Routes>
-            </BrowserRouter>
-    );
-}
+  return (
+    <>
+      <h1>{picture.title}</h1>
+      <img src={picture.url} alt={picture.title} />
+      <p>{picture.explanation}</p>
+    </>
+  );
+};
 
-export default NasaPhoto;
+export default NasaPicture;
