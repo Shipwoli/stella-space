@@ -10,7 +10,7 @@ function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/picture-days" >Nasa Picture of the Day</Link>
+          <Link to="/nasa-picture" >Nasa Picture of the Day</Link>
         </li>
         <li>
           <Link to="/weather-mars">Weather on Planet Mars</Link>
