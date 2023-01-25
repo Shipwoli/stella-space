@@ -1,26 +1,25 @@
+import React, { useState, useEffect } from 'react';
 
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-
-
-
-const MarsRoverPhotos = () => {
+function MarsRoverPhotos() {
   const [photos, setPhotos] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const response = await axios.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG");
-      setPhotos(response.data.photos);
-    };
-    fetchData();
+    fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=h14aKNTMgeEqclkSY2yFEFYUKHSji7fjLaTN60F3')
+      .then(response => response.json())
+      .then(data => {
+        setPhotos(data.photos);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   }, []);
 
   return (
     <div>
-    {photos.map(photo => (
-      <img src={photo.img_src} alt={photo.camera.name} key={photo.id} />
-    ))}
-  </div>
+      {photos.map(photo => (
+        <img key={photo.id} src={photo.img_src} alt={photo.camera.name} />
+      ))}
+    </div>
   );
 }
 

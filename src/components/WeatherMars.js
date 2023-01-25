@@ -1,26 +1,25 @@
+
 import React, { useState, useEffect } from 'react';
-
-
-
-const  WeatherMars= () => {
-    const [weatherData, setWeatherData] = useState({});
-
-
+function MarsWeather() {
+  const [weatherData, setWeatherData] = useState(null);
   useEffect(() => {
-    fetch('https://api.nasa.gov/insight_weather/?api_key={e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG}&feedtype=json&ver=1.0')
-      .then(response => response.json())
-      .then(data => setWeatherData(data));
+    async function fetchData() {
+      const response = await fetch('https://api.nasa.gov/insight_weather/?api_key=h14aKNTMgeEqclkSY2yFEFYUKHSji7fjLaTN60F3&feedtype=json&ver=1.0');
+      const data = await response.json();
+      setWeatherData(data);
+    }
+    fetchData();
   }, []);
-
+  if (!weatherData) {
+    return <div>Loading...</div>;
+  }
   return (
- 
     <div>
-      <h2>Weather on Planet Mars</h2>
-      <p>Temperature: {weatherData.AT && weatherData.AT.av}</p>
-      <p>Speed of Wind: {weatherData.HWS && weatherData.HWS.av}</p>
+      <h2>Weather on Mars</h2>
+      <p>Temperature: {weatherData.temperature}</p>
+      <p>Wind Speed: {weatherData.wind_speed}</p>
+      <p>Wind Direction: {weatherData.wind_direction}</p>
     </div>
   );
-
 }
-
-export default WeatherMars;
+export default MarsWeather;

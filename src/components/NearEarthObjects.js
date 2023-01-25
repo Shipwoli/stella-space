@@ -7,7 +7,7 @@ function NearEarthObjects() {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(
-        'https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-01-01&end_date=2022-01-07&api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG',
+        'https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-01-01&end_date=2022-01-07&api_key=h14aKNTMgeEqclkSY2yFEFYUKHSji7fjLaTN60F3',
       );
 
       const data = await response.json();
