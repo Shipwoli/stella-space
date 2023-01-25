@@ -19,7 +19,7 @@ const MapAsteroids = () => {
       <h1>Map of Asteroids</h1>
       <ul>
         {asteroids.map((asteroid) => (
-          <li key={asteroid.id}>{asteroid.name}</li>
+          <li key={asteroid.id} className="map">{asteroid.name}</li>
         ))}
       </ul>
     </div>

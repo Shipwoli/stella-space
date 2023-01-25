@@ -8,3 +8,11 @@ h2 {
     font-size: 20px;
     margin-top: 20px;
   }
+  
+li{
+  text-align: center;
+}
+
+li.map{
+  text-align: left;
+}
