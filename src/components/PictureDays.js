@@ -7,7 +7,7 @@ const NasaPicture = () => {
   const [picture, setPicture] = useState(null);
 
   useEffect(() => {
-    fetch('https://api.nasa.gov/planetary/apod?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG')
+    fetch('https://api.nasa.gov/planetary/apod?api_key=h14aKNTMgeEqclkSY2yFEFYUKHSji7fjLaTN60F3')
       .then(response => response.json())
       .then(data => setPicture(data));
   }, []);

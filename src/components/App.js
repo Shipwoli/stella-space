@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MapAsteroids from "./MapAsteroids";
 import MarsRoverPhotos from "./MarsPhotos";
-import WeatherMars from "./WeatherMars";
+import MarsWeather from "./WeatherMars";
 import NasaPicture from "./PictureDays";
 // import NearEarthObjects from "./NearEarthObjects";
 import "./App.css";
@@ -15,11 +15,11 @@ export default function App() {
       <BrowserRouter>
       <Navbar />
       <IntroParagraph/>
-      <NasaPicture />
+      {/* <NasaPicture /> */}
      <Routes>
         <Route path="/map-asteroids" element={<MapAsteroids />} />
         <Route path="/mars-rover-photos" element={<MarsRoverPhotos />} />
-        <Route path="/weather-mars" element={<WeatherMars />} />
+        <Route path="/weather-mars" element={<MarsWeather />} />
         <Route path="/nasa-picture" element={<NasaPicture />} />
         {/* <Route path="/near-earth-objects" element={<NearEarthObjects />} />  */}
       </Routes>

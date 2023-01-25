@@ -9,7 +9,7 @@ const MarsRoverPhotos = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=e9nvtlCBUdQgghFkPqS8y00lMrXFF2wbNpjwMSTG");
+      const response = await axios.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=h14aKNTMgeEqclkSY2yFEFYUKHSji7fjLaTN60F3");
       setPhotos(response.data.photos);
     };
     fetchData();
