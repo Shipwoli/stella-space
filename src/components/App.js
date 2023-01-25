@@ -13,17 +13,16 @@ import IntroParagraph from "./IntroParagraph";
 export default function App() {
     return (
       <BrowserRouter>
-            <Navbar />
-            <IntroParagraph/>
-            <NasaPicture />
-         <Routes>
+      <Navbar />
+      <IntroParagraph/>
+     <Routes>
         
-            {/* <Route exact path="/" component={Home} /> */}
-            <Route path="/map-asteroids" component={MapAsteroids} />
-            <Route path="/mars-photos" component={MarsPhotos} />
-            <Route path="/weather-mars" component={WeatherMars} />
-            <Route path="/nasa-picture" component={NasaPicture} />
-            <Route path="/near-earth-objects" component={NearEarthObjects} />
+        {/* <Route exact path="/" component={Home} /> */}
+        <Route path="/map-asteroids" component={MapAsteroids} />
+        <Route path="/mars-photos" component={MarsPhotos} />
+        <Route path="/weather-mars" component={WeatherMars} />
+        <Route path="/picture-days" component={PictureDays} />
+        <Route path="/near-earth-objects" component={NearEarthObjects} />
 
        
          </Routes>
