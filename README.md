@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Stellar Space
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description 
 
-## Available Scripts
+Nothing is cool as being able to visualize space activities e.g Asteroids and so on. Your task is to create a simple platform that offers the following capabilities:
 
-In the project directory, you can run:
+NB: Use the following API to achieve the deliverable below: https://api.nasa.gov/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Minimum Viable Product
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The following requirements MUST be delivered in order to consider your submission as complete:
 
-### `npm test`
+-Home Page - When a user first opens the application, they should be greeted with a page that has information about what the application aims to do.
+-Should be able to view the Nasa picture of the day
+-Should be able to see all the objects near the earth (Visualize this in the UI).
+-Should be able to visualize the weather on planet mars.
+-Should be able to show all Mars Rover Photos.
+-Should be able to display a Map of Asteroids within the space.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Extra Deliverables
 
-### `npm run build`
+The following deliverables will earn you extra points:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-Add an authentication page (Login / Registration)
+-Provide a logout functionality
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+ # Setup
+ 
+  ## Getting Started
+  
+To use the content on this repository, ensure you have the following:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- A computer that runs on either of the following; (Windows 7+, Linux, Mac OS)
+- nodejs 9.0+
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To use this repository on your machine requires some simple steps
 
-## Learn More
+### Alternative One
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Open a terminal / command line interface on your computer
+- Clone the repository by using the following:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        git clone https:git@github.com:matomugo60/stella-space.git
 
-### Code Splitting
+- Be patient as it creates a copy on your local machine for you.
+- Change directory to the repo folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        cd stella-space
+  
 
-### Analyzing the Bundle Size
+- (Optional) Open it in ``Visual Studio Code``
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+        code .
 
-### Making a Progressive Web App
+- (Alternate Option) Open it in any editor of your choice.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+### Alternative Two
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- On the top right corner of this page there is a button labelled ``Fork``.
+- Click on that button to fork the repository to your own account.
+- Take on the process in ``Alternative One`` above.
+- Remember to replace your username when cloning.
 
-### Deployment
+        git clone https://github.com/your-username-here/stella-space.git
+        
+ 
+ 
+# Running the application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To run the application, you can use the following steps 
 
-### `npm run build` fails to minify
+- Install required dependencies from npm using
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+      npm install
+      
+- To run the application use
+
+      npm start
+ 
+ 
+ 
+# Author & Licence
+
+### Authors  
+
+Saviour Khalwale
+Muna Hassan
+Martin Mugo
+Changawa Issa
+
+
+Licence : permissive MIT licence
+
+
