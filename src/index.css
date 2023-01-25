@@ -1,4 +1,5 @@
 body {
+  background-image: url("https://static.independent.co.uk/2022/04/04/20/iStock-1198015422.jpg?width=1200");
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,20 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+color: aliceblue;
+}
+li{
+  color: aliceblue;
+}
+h1{
+  color: aliceblue;
+}
+h2{
+  color: aliceblue;
+}
+form{
+  color: aliceblue;
 }
