@@ -17,11 +17,11 @@ export default function App() {
       <IntroParagraph/>
       <NasaPicture />
      <Routes>
-        <Route path="/map-asteroids" component={MapAsteroids} />
-        <Route path="/mars-photos" component={MarsPhotos} />
-        <Route path="/weather-mars" component={WeatherMars} />
-        <Route path="/nasa-picture" component={NasaPicture} />
-        <Route path="/near-earth-objects" component={NearEarthObjects} /> 
+        <Route path="/map-asteroids" element={<MapAsteroids />} />
+        <Route path="/mars-photos" element={<MarsPhotos />} />
+        <Route path="/weather-mars" element={<WeatherMars />} />
+        <Route path="/nasa-picture" element={<NasaPicture />} />
+        <Route path="/near-earth-objects" element={<NearEarthObjects />} /> 
       </Routes>
      </BrowserRouter>
      

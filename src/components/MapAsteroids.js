@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function MapAsteroids() {
     const [asteroids, setAsteroids] = useState([]);
@@ -11,9 +11,9 @@ function MapAsteroids() {
     }, []);
   
   return (
-    <BrowserRouter>
-    <Routes>
-    <Route>
+    // <BrowserRouter>
+    // <Routes>
+    // <Route>
       <div>
         <h1>Map of Asteroids</h1>
         {asteroids.map(asteroid => (
@@ -23,9 +23,9 @@ function MapAsteroids() {
           </div>
         ))}
       </div>
-      </Route>
-      </Routes>
-      </BrowserRouter>
+      // </Route>
+      // </Routes>
+      // </BrowserRouter>
     );
   }
 

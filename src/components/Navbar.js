@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 function Navbar() {
   return (
     <nav className='navbar bg-dark'>
@@ -10,7 +11,7 @@ function Navbar() {
           <Link className='text-light nav-link' to="/">Home</Link>
         </li>
         <li className="nav-item me-4">
-          <Link className='text-light nav-link' to="/picture-days">Nasa Picture of the Day</Link>
+          <Link className='text-light nav-link' to="/nasa-picture">Nasa Picture of the Day</Link>
         </li>
         <li className="nav-item me-4">
           <Link className='text-light nav-link' to="/weather-mars">Weather on Planet Mars</Link>
