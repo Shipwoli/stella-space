@@ -32,11 +32,11 @@ function Navbar() {
             <Link className='text-dark nav-link' to="/map-asteroids">Map of Asteroids</Link>
             </button>
         </li>
-        {/* <li className="nav-item me-4">
+        <li className="nav-item me-4">
         <button>
             <Link className='text-dark nav-link' to="/near-earth-objects">Objects Near Earth</Link>
             </button>
-        </li> */}
+        </li> 
       </ul>
       </div>
     </nav>

@@ -8,6 +8,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import IntroParagraph from "./IntroParagraph";
 import Login from "./Login";
+import NearEarthObjects from "./NearEarthObjects";
 
 
 
@@ -23,7 +24,7 @@ export default function App() {
         <Route path="/mars-rover-photos" element={<MarsRoverPhotos />} />
         <Route path="/weather-mars" element={<MarsWeather />} />
         <Route path="/nasa-picture" element={<NasaPicture />} />
-        {/* <Route path="/near-earth-objects" element={<NearEarthObjects />} />  */}
+        <Route path="/near-earth-objects" element={<NearEarthObjects />} /> 
       </Routes>
      </BrowserRouter>
      
